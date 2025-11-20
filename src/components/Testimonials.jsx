@@ -28,7 +28,7 @@ const Testimonials = () => {
         <p className="text-slate-600 text-center max-w-2xl mx-auto mb-12">Feedback real după lucrări efectuate.</p>
         <div className="grid md:grid-cols-3 gap-6">
           {items.map((t, i) => (
-            <div key={i} className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
+            <div key={i} className="p-6 bg-blue-50 rounded-2xl border border-blue-100">
               <p className="text-slate-700 italic">“{t.quote}”</p>
               <div className="mt-4">
                 <p className="text-slate-900 font-semibold">{t.name}</p>

@@ -35,17 +35,17 @@ const Contact = () => {
           <form onSubmit={handleSubmit} className="bg-slate-50 border border-slate-100 rounded-2xl p-6 md:p-8 space-y-4">
             <div>
               <label className="block text-slate-700 mb-2">Nume</label>
-              <input name="name" value={form.name} onChange={handleChange} required className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-cyan-500 bg-white" placeholder="Nume complet" />
+              <input name="name" value={form.name} onChange={handleChange} required className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-white" placeholder="Nume complet" />
             </div>
             <div>
               <label className="block text-slate-700 mb-2">Telefon</label>
-              <input name="phone" value={form.phone} onChange={handleChange} required className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-cyan-500 bg-white" placeholder="07xx xxx xxx" />
+              <input name="phone" value={form.phone} onChange={handleChange} required className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-white" placeholder="07xx xxx xxx" />
             </div>
             <div>
               <label className="block text-slate-700 mb-2">Mesaj</label>
-              <textarea name="message" value={form.message} onChange={handleChange} required rows="4" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-cyan-500 bg-white" placeholder="Descrie pe scurt lucrarea" />
+              <textarea name="message" value={form.message} onChange={handleChange} required rows="4" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-white" placeholder="Descrie pe scurt lucrarea" />
             </div>
-            <button type="submit" className="w-full px-6 py-4 rounded-xl text-lg font-semibold bg-cyan-500 hover:bg-cyan-400 text-white shadow-lg shadow-cyan-500/20 transition">
+            <button type="submit" className="w-full px-6 py-4 rounded-xl text-lg font-semibold bg-red-600 hover:bg-red-500 text-white shadow-lg shadow-red-600/20 transition">
               {status === 'sending' ? 'Se trimite...' : 'Trimite cererea'}
             </button>
             {status === 'sent' && <p className="text-green-600 text-center">Cerere trimisă cu succes!</p>}
